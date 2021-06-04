@@ -11,7 +11,7 @@ A simple Arrear Pension Calculator app written in python with GUI specifically f
     Coming Soon.
 # Features :
  1. This is an Offline application, so no need of an Internet connection.
- 2. Calculate complecated calculations like different component rates for different periods in jus a single click.
+ 2. Calculate complecated calculations like different component rates for different periods in just a single click.
  3. Easy to use, just input required data and click on calculate button. Also you can generate reports and print them.
  4. Seperate Component Schedule window to calculate different components.
  5. Generate complete Due-Drawn statement in no time to get arrear pension amount. Very handy for Treasury Users.

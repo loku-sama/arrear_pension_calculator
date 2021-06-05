@@ -40,8 +40,8 @@
 	  <div class="info">
           <p><b>PPO ID :</b> {{id}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<b>Name of the Pensioner :</b> {{pen_name}}</p>
-		<p><b>Arrear From :</b> {{start_date}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<b>Arrear Upto :</b> {{end_date}}</p>
+		<p><b>From Date :</b> {{start_date}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<b>To Date :</b> {{end_date}}</p>
 		<hr/>
 	  </div>
 	  <center><h3>:: Component Details ::</h3></center><hr/>
@@ -65,8 +65,8 @@
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-ciie" colspan="3">DUE</th>
-    <th class="tg-ciie" colspan="3">DRAWN</th>
+    <th class="tg-ciie" colspan="3">DUE / RECOVERY</th>
+    <th class="tg-ciie" colspan="3">DRAWN / OVERPAYMENT</th>
   </tr>
 </thead>
 <tbody>
@@ -131,7 +131,7 @@
     <td class="tg-xwyw" colspan="2">{{total_drawn}}</td>
   </tr>
   <tr>
-    <td class="tg-ltqh" colspan="3">Total Arrear</td>
+    <td class="tg-ltqh" colspan="3">Total Arrear / Recovery / Overpayment</td>
     <td class="tg-cum3">Rupees </td>
     <td class="tg-8a48" colspan="2">{{total_arrear}}</td>
   </tr>

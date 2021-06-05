@@ -100,7 +100,7 @@ while True:
                     layout.window['sub_dr_drawn'].update(disabled=False)
                     layout.window['combo-due'].update(disabled=False)
                 else:
-                    layout.sg.Popup("Please input valid data atlease in the first column.", title="Error!",
+                    layout.sg.Popup("Please input valid data atleast in the first row.", title="Error!",
                                     icon=r'icon.ico')
                     layout.window['sub_dr'].update(disabled=True)
                     layout.window['sub_dr_drawn'].update(disabled=True)
@@ -113,57 +113,57 @@ while True:
 
     if event == 'sub_dr_drawn':  # Submit to Drawn section
         if values['combo-due'] == "DR":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['old_dr_show'].update(total_dr)
-            layout.window['old_dr'].update(0)
+            layout.window['old_dr'].update('Check Comp. Schedule')
         elif values['combo-due'] == "MR":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['old_mr_show'].update(total_dr)
-            layout.window['old_mr'].update(0)
+            layout.window['old_mr'].update('Check Comp. Schedule')
         elif values['combo-due'] == "IR":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['old_ir_show'].update(total_dr)
-            layout.window['old_ir'].update(0)
+            layout.window['old_ir'].update('Check Comp. Schedule')
         elif values['combo-due'] == "COM":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['old_cp_show'].update(total_dr)
-            layout.window['old_cp'].update(0)
+            layout.window['old_cp'].update('Check Comp. Schedule')
         else:
             layout.sg.Popup("Please select the component from the dropdown list.", title="Error!", icon=r'icon.ico')
 
     if event == 'sub_dr':  # Submit to Due section
         if values['combo-due'] == "DR":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['new_dr_show'].update(total_dr)
-            layout.window['new_dr'].update(0)
+            layout.window['new_dr'].update('Check Comp. Schedule')
         elif values['combo-due'] == "MR":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['new_mr_show'].update(total_dr)
-            layout.window['new_mr'].update(0)
+            layout.window['new_mr'].update('Check Comp. Schedule')
         elif values['combo-due'] == "IR":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico', )
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico', )
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['new_ir_show'].update(total_dr)
-            layout.window['new_ir'].update(0)
+            layout.window['new_ir'].update('Check Comp. Schedule')
         elif values['combo-due'] == "COM":
-            layout.sg.Popup("Data submitted succesfully.", title="Success", icon=r'icon.ico')
+            layout.sg.Popup("Data submitted successfully.", title="Success", icon=r'icon.ico')
             layout.window['main'].update(visible=True)
             layout.window['da'].update(visible=False)
             layout.window['new_cp_show'].update(total_dr)
-            layout.window['new_cp'].update(0)
+            layout.window['new_cp'].update('Check Comp. Schedule')
         else:
             layout.sg.Popup("Please select the component from the dropdown list.", title="Error!", icon=r'icon.ico')
 
@@ -180,28 +180,28 @@ while True:
             old_basic = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['old_basic'])))
             old_basic_due = old_basic.get_dr1((int(values['old_basic'])), 'old_basic_show')
 
-            if values['old_dr_show'] != '' and int(values['old_dr']) == 0:
+            if values['old_dr_show'] != '' and values['old_dr'] == 'Check Comp. Schedule':
                 old_dr_due = int(values['old_dr_show'])
                 pass
             else:
                 old_dr = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['old_dr'])))
                 old_dr_due = old_dr.get_dr1((int(values['old_dr'])), 'old_dr_show')
 
-            if values['old_mr_show'] != '' and int(values['old_mr']) == 0:
+            if values['old_mr_show'] != '' and values['old_mr'] == 'Check Comp. Schedule':
                 old_mr_due = int(values['old_mr_show'])
                 pass
             else:
                 old_mr = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['old_mr'])))
                 old_mr_due = old_mr.get_dr1((int(values['old_mr'])), 'old_mr_show')
 
-            if values['old_cp_show'] != '' and int(values['old_cp']) == 0:
+            if values['old_cp_show'] != '' and values['old_cp'] == 'Check Comp. Schedule':
                 old_cp_due = int(values['old_cp_show'])
                 pass
             else:
                 old_cp = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['old_cp'])))
                 old_cp_due = old_cp.get_dr1((int(values['old_cp'])), 'old_cp_show')
 
-            if values['old_ir_show'] != '' and int(values['old_ir']) == 0:
+            if values['old_ir_show'] != '' and values['old_ir'] == 'Check Comp. Schedule':
                 old_ir_due = int(values['old_ir_show'])
                 pass
             else:
@@ -216,28 +216,28 @@ while True:
             new_basic = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['new_basic'])))
             new_basic_due = new_basic.get_dr1((int(values['new_basic'])), 'new_basic_show')
 
-            if values['new_dr_show'] != '' and int(values['new_dr']) == 0:
+            if values['new_dr_show'] != '' and values['new_dr'] == 'Check Comp. Schedule':
                 new_dr_due = int(values['new_dr_show'])
                 pass
             else:
                 new_dr = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['new_dr'])))
                 new_dr_due = new_dr.get_dr1((int(values['new_dr'])), 'new_dr_show')
 
-            if values['new_mr_show'] != '' and int(values['new_mr']) == 0:
+            if values['new_mr_show'] != '' and values['new_mr'] == 'Check Comp. Schedule':
                 new_mr_due = int(values['new_mr_show'])
                 pass
             else:
                 new_mr = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['new_mr'])))
                 new_mr_due = new_mr.get_dr1((int(values['new_mr'])), 'new_mr_show')
 
-            if values['new_cp_show'] != '' and int(values['new_cp']) == 0:
+            if values['new_cp_show'] != '' and values['new_cp'] == 'Check Comp. Schedule':
                 new_cp_due = int(values['new_cp_show'])
                 pass
             else:
                 new_cp = gc.MainStart((values["start_date"]), (values["end_date"]), (int(values['new_cp'])))
                 new_cp_due = new_cp.get_dr1((int(values['new_cp'])), 'new_cp_show')
 
-            if values['new_ir_show'] != '' and int(values['new_ir']) == 0:
+            if values['new_ir_show'] != '' and values['new_ir'] == 'Check Comp. Schedule':
                 new_ir_due = int(values['new_ir_show'])
                 pass
             else:

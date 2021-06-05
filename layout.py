@@ -39,18 +39,18 @@ menu_def = [
 home_layout = [
     [sg.Text("", size=(15, 1)), sg.Text("ARREAR PENSION CALCULATOR", size=(50, 1), font=(15), justification="center"),
      sg.Image(r'pysmall.png', enable_events=True, key='python1', tooltip="Click here to know more!")],
-    [sg.Text("An open source application for calculating arrear pension between any given period", size=(100, 1),
-             justification="center")],
+    [sg.Text("An open source application for calculating Arrear / Recovery / Overpayment of pension between any given "
+             "Period", size=(100, 1), justification="center")],
     [sg.HSeparator()],
     [sg.Text("PPO ID: ", size=(10, 1)), sg.Input(size=(10, 1), enable_events=True, border_width=1, key='id'),
      sg.Text(size=(15, 1)),
      sg.Text("Pensioner's Name :", size=(15, 1)), sg.InputText(size=(32, 1), key='name', enable_events=True),
      ],
     [sg.HSeparator()],
-    [sg.Text("Arrear From :", size=(10, 1)), sg.In("", size=(15, 1), key='start_date', enable_events=True),
+    [sg.Text("From Date :", size=(10, 1)), sg.In("", size=(15, 1), key='start_date', enable_events=True),
      sg.CalendarButton(title="From Date", key="dof", enable_events=True, disabled=False, format=date_format,
                        no_titlebar=False, button_text="Choose Date"), sg.Text(size=(10, 1)),
-     sg.Text("Arrear Upto :", size=(10, 1)), sg.In("", size=(15, 1), key='end_date', enable_events=True),
+     sg.Text("To Date :", size=(10, 1)), sg.In("", size=(15, 1), key='end_date', enable_events=True),
      sg.CalendarButton(title="Upto Date", key="dou", enable_events=True, disabled=False, format=date_format,
                        no_titlebar=False, button_text="Choose Date")
      ],
@@ -60,9 +60,9 @@ home_layout = [
     ],
     [sg.HSeparator()],
     [
-        sg.Text("Due", size=(37, 1), font=(2)),
+        sg.Text("Due / Recovery", size=(37, 1), font=(2)),
         sg.VSeparator(),
-        sg.Text("Drawn", size=(30, 1), font=(2))
+        sg.Text("Drawn / Overpayment", size=(30, 1), font=(2))
     ],
     [sg.HSeparator()]
 ]
@@ -140,13 +140,12 @@ second_column = [
 ################################### Comp. Schedule Layout ################################################
 
 da_layout = [
-    # [sg.HSeparator()],
     [sg.Text("COMPONENTS SCHEDULE", size=(700, 1), font=(15), justification="center")],
     [sg.HSeparator()],
-    [sg.Text("Please fill the details to calculate applicable Components for different periods", justification="center",
+    [sg.Text("Please fill the details to calculate applicable Components for different Periods", justification="center",
              size=(700, 2), )],
     [sg.HSeparator()],
-    [sg.Text("From ", size=(5, 1)), sg.Text(size=(18, 1)), sg.Text("Upto ", size=(5, 1)), sg.Text(size=(20, 1)),
+    [sg.Text("From Date", size=(10, 1)), sg.Text(size=(13, 1)), sg.Text("To Date ", size=(10, 1)), sg.Text(size=(15, 1)),
      sg.Text("Per Month", size=(15, 1)), sg.Text(size=(3, 1)), sg.Text("Total ", size=(5, 1))
      ],
     [sg.HSeparator()],
@@ -205,7 +204,7 @@ da_layout = [
                  key='combo-due', tooltip="Select applicable component from the list.")
     ],
     [
-        sg.Text(size=(13, 1)),
+        sg.Text(size=(14, 1)),
         sg.Button("CALCULATE", key='cal_dr', enable_events=True, tooltip="Click to Calculate"),
         sg.Button("Submit to Due", key='sub_dr', size=(15, 1), enable_events=True, disabled=True,
                   tooltip="Click to Submit to Due section"),
@@ -229,10 +228,10 @@ main_layout_app = [
      sg.VSeparator(),
      sg.Column(second_column, visible=True)],
     [sg.HSeparator()],
-    [sg.Text("Total Arrear (Due - Drawn) :", size=(25, 1)), sg.In("", key='arrear', disabled=True, size=(50, 1))],
+    [sg.Text("Total (Due - Drawn) :", size=(25, 1)), sg.In("", key='arrear', disabled=True, size=(50, 1))],
     [sg.Text("IMPORTANT : Please click CALCULATE button everytime you make a change."),
-     sg.Text("Free-Software-movement", size=(20, 1), key="fsm", tooltip="Click here to know more.",
-             font=("u"), enable_events=True)],
+     sg.Text("Free-Software-movement", size=(20, 1), key="fsm", tooltip="Click here to know more.", enable_events=True,
+             font="u")],
     [sg.HSeparator()],
     [sg.Text(size=(23, 1)),
      sg.Button("CALCULATE", tooltip="Click here to calculate arrear pension.", focus=True, size=(20, 1)),

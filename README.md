@@ -24,5 +24,16 @@ If you want to check the source code and want to build something better, please 
 For any suggestions or Bug reporting, please contact me at happysourav96@gmail.com
 # Screenshoots :
 <img src="https://raw.githubusercontent.com/loku-sama/arrear_pension_calculator/main/assets/ss1.PNG" alt="hom" height="400px" width="400px">      <img src="https://github.com/loku-sama/arrear_pension_calculator/raw/main/assets/ss2.PNG" alt="gratuity-calculator" height="400px" width="400px">
+# How to Run the Source Code :
+1. First download all the source code files (including the requirements.txt file) and install python3 if you dont have it.
+2. Run the following command in your terminal to install all the required dependencies at once.
+  ```python
+  pip install requirements.txt
+  ```
+3. Now go to the parent folder and open terminal there. You must put the 'templates' folder in the parant directory and create an empty 'reports' folder there.
+4. Now run the following command -
+```python
+python main.py
+```
 # Contribuion :
 If you're new to contributing to Open Source on Github, <a href="https://guides.github.com/activities/contributing-to-open-source/">this guide</a> can help you get started.

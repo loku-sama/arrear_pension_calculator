@@ -5,8 +5,9 @@ A simple Arrear Pension Calculator app written in python with GUI specifically f
 2. Pensioners himself/herself
 # How to Install :
   # For Windows OS :
-   1. Download the zip archive file for Windows by <a href="https://github.com/loku-sama/arrear_pension_calculator/releases/download/1.0.1/Arrear_Pension_Calculator_ver_1.0.1.zip">CLICKING HERE</a> and unzip it. 
-   2. Run the Arrear_Pension_Calculator.exe (windows executable) file, no need to install the app.
+   1. Download the zip archive file for Windows from below and unzip it. 
+   2. Run the Arrear_Pension_Calculator.exe (windows executable) file, no need to install the app.<br/><br/>
+   <a href="https://sourceforge.net/projects/arrear-pension-calculator/files/latest/download"><img alt="Download Arrear_Pension_Calculator" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
   # For Linux OS :
     Coming Soon.
 # Features :

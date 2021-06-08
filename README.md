@@ -4,11 +4,15 @@ A simple Arrear Pension Calculator app written in python with GUI specifically G
 # Intended Users :
 1. Officials who works with pensioners
 2. Pensioners himself/herself
+# Whats New in Ver. 1.0.2 :
+In this latest release a major bug showing wrong results for giving From date input first day of month and To date input any day of a month not in the same year. But this bug has been fixed in the latest release of version 1.0.2. Please download the latest version and delete your old one.
+
+Update includes Minor improvments and bug fixes.
 # How to Install :
   # For Windows OS :
    1. Download the zip archive file for Windows from below and unzip it. 
    2. Run the Arrear_Pension_Calculator.exe (windows executable) file, no need to install the app.<br/><br/>
-   <a href="https://sourceforge.net/projects/arrear-pension-calculator/files/latest/download"><img alt="Download Arrear_Pension_Calculator" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+   <a href="https://github.com/loku-sama/arrear_pension_calculator/releases/download/1.0.2/Arrear_Pension_Calculator_ver_1.0.2.zip">CLICK HERE TO DOWNLOAD THE LATEST RELEASE VERSION 1.0.2</a>
   # For Linux OS :
     Coming Soon.
 # Features :

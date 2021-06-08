@@ -77,11 +77,15 @@ class MainStart:
             if self.start_day1 == 1 and self.extra_day_in_end_date1 == self.total_days_in_end_month1:
                 exact_months1 = round((
                         self.months_in_days1 - self.extra_day_in_start_date1 - self.extra_day_in_end_date1) / 30) + 1
-            elif self.start_day1 == 1:
+            elif self.start_day1 == 1 and self.Diff_year1 == 0:
                 exact_months1 = self.Diff_month1
+            elif self.end_day1 != self.total_days_in_end_month1 and self.start_day1 == 1:
+                exact_months1 = round(
+                    (self.months_in_days1 - self.extra_day_in_start_date1 - self.extra_day_in_end_date1) / 30) + 1
             else:
                 exact_months1 = round(
                     (self.months_in_days1 - self.extra_day_in_start_date1 - self.extra_day_in_end_date1) / 30)
+
             dr1_due = get_arrear(dr1, self.Diff_month1, exact_months1, self.Diff_days1, self.total_days_in_start_month1,
                                  self.extra_day_in_end_date1, self.extra_day_in_start_date1,
                                  self.total_days_in_end_month1, self.Diff_year1)

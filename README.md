@@ -4,6 +4,12 @@ A simple Arrear Pension Calculator app written in python with GUI specifically G
 # Intended Users :
 1. Officials who works with pensioners
 2. Pensioners himself/herself
+
+# Whats New in Ver. 1.1.0 :
+1. New Component Additional Pension added.
+2. Now Basic Pension can also be calculated from Comp. Schedule window.
+3. Minor improvements and Bug Fixes.
+
 # Whats New in Ver. 1.0.2 :
 In this latest release a major bug showing wrong results for giving From date input first day of month and To date input any day of a month not in the same year. But this bug has been fixed in the latest release of version 1.0.2. Please download the latest version and delete your old one.
 

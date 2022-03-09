@@ -12,7 +12,7 @@ Update includes Minor improvments and bug fixes.
   # For Windows OS :
    1. Download the zip archive file for Windows from below and unzip it. 
    2. Run the Arrear_Pension_Calculator.exe (windows executable) file, no need to install the app.<br/><br/>
-   <a href="https://github.com/loku-sama/arrear_pension_calculator/releases/download/1.0.2/Arrear_Pension_Calculator_ver_1.0.2.zip">CLICK HERE TO DOWNLOAD THE LATEST RELEASE VERSION 1.0.2</a>
+   <a href="https://github.com/loku-sama/arrear_pension_calculator/releases/download/1.1.0/Arrear_Pension_Calculator_ver_1.1.0.zip">CLICK HERE TO DOWNLOAD THE LATEST RELEASE VERSION 1.0.2</a>
   # For Linux OS :
     Coming Soon.
 # Features :

@@ -32,7 +32,7 @@ Update includes Minor improvments and bug fixes.
 If you are a regular user, just download the .zip file, extract it and run .exe file to use the application. No need to install it.
 If you want to check the source code and want to build something better, please download the Source code files and run the 'main.py' along with its dependencies.
 For any suggestions or Bug reporting, please contact me at happysourav96@gmail.com
-# Screenshoots :
+# Screenshots :
 <img src="https://raw.githubusercontent.com/loku-sama/arrear_pension_calculator/main/assets/ss1.PNG" alt="hom" height="400px" width="400px">      <img src="https://github.com/loku-sama/arrear_pension_calculator/raw/main/assets/ss2.PNG" alt="gratuity-calculator" height="400px" width="400px">
 # How to Run the Source Code :
 1. First download all the source code files (including the requirements.txt file) and install python3 if you dont have it.
